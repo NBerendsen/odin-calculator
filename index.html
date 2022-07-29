@@ -5,11 +5,58 @@
     <meta charset="utf-8">
     <link rel='stylesheet' href='styles/style.css'>
     <script defer src='scripts/script.js'></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Spline+Sans+Mono:wght@600&display=swap');
+    </style> 
   </head>
   <body>
     <h1>A Simple Calculator</h1>
     <div id='content'>
       <div id='calculator'>
+        <div id='display'>
+            0
+        </div>
+        <div id='buttons'>
+          <div id='numbers'>
+            <div class='number_row' id='button-row-1'>
+              <button data-key='103' class="button_" id='button-7'>7</button>
+              <button data-key='104' class="button_" id='button-8'>8</button>
+              <button data-key='105' class="button_" id='button-9'>9</button>
+            </div>
+            <div class='number_row' id='button-row-2'>
+              <button data-key='100' class="button_" id='button-4'>4</button>
+              <button data-key='101' class="button_" id='button-5'>5</button>
+              <button data-key='102' class="button_" id='button-6'>6</button>
+            </div>
+            <div class='number_row' id='button-row-3'>
+              <button data-key='97' class="button_" id='button-1'>1</button>
+              <button data-key='98' class="button_" id='button-2'>2</button>
+              <button data-key='99' class="button_" id='button-3'>3</button>
+            </div>
+            <div class='number_row' id='button-row-4'>
+              <button data-key='16' class="button_" id='button-undo'>+/-</button>
+              <button data-key='96' class="button_" id='button-0'>0</button>
+              <button data-key='110' class="button_" id='button-dot'>.</button>
+            </div>
+          </div>
+          <div id='operations'>
+            <div class='op_row' id='op-row-1'>
+              <button data-key='8' class="button_" id='button-clear'>UNDO</button>
+              <button data-key='46' class="button_" id='button-clear'>CLEAR</button>
+            </div>
+            <div class='op_row' id='op-row-2'>
+              <button data-key='106' class="button_" id='button-mult'>*</button>
+              <button data-key='111' class="button_" id='button-div'>÷</button>
+            </div>
+            <div class='op_row' id='op-row-3'>
+              <button data-key='107' class="button_" id='button-add'>+</button>
+              <button data-key='109' class="button_" id='button-sub'>-</button>
+            </div>
+            <div class='op_row' id='op-row-4'>
+              <button data-key='13' class="button_" id='button-equal'>=</button>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </body>

@@ -1,3 +1,7 @@
+* {
+  font-family: 'Spline Sans Mono', monospace;
+}
+
 h1 {
   text-align: center;
 }
@@ -8,8 +12,105 @@ h1 {
 }
 
 #calculator {
-  border: 2px solid red;
+  display: flex;
+  gap: 4px;
+  flex-direction: column;
   min-width: 300px;
   min-height: 400px;
   flex-basis: 0;
+  border: 6px solid #041C13;
+  background-color: #0A402C;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+#display {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  align-items: flex-end;
+  background-color: #B54A4A;
+  color: #25D997;
+  font-weight: bold;
+  border: 2px solid #DB9A4B;
+  font-size: 3.1em;
+  border-radius: 10px;
+  padding: 5px;
+  margin: 0px 3px 8px 3px;
+  text-shadow: 1.7px 1.7px 1px #0A3D2A;
+}
+
+#buttons {
+  flex: 4;
+  display: flex;
+  gap: 2px;
+  background-color: #DB9A4B;
+  padding: 2px;
+  border-radius: 5px;
+}
+
+#numbers {
+  flex: 3;
+  display: flex;
+  gap: 1px;
+  flex-direction: column;
+}
+
+#operations {
+  flex: 2;
+  gap: 1px;
+}
+
+.number_row {
+  flex: 1;
+  display: flex;
+}
+
+.button_ {
+  flex: 1;
+  background-color: #0A402C;
+  color: #DB9A4B;
+  font-weight: bold;
+  border-color: #041C13;
+  font-size: 25px;
+  border-radius: 10%;
+  text-shadow: 0.7px 0.7px 2px #B54A4A;
+}
+
+/* .button_:hover{
+  background-color: #126E4C;
+} */
+
+.button_.active,
+.button_:active {
+  background-color: #126E4C;
+  color: #dbbc68;
+  /* transform: translateY(-1px); */
+}
+
+#button-undo, #button-clear {
+  font-size: 15px;
+}
+
+/* #button-dot {
+  flex-grow: 4;
+}
+
+#button-0 {
+  flex-grow: 9;
+} */
+
+#operations {
+  display: flex;
+  flex-direction: column;
+}
+
+.op_row {
+  flex: 1;
+  display: flex;
+}
+
+.pressed {
+  background-color: #126E4C;
 }
